@@ -9,7 +9,6 @@ dependencies:
   pre:
     - brew update
     - brew install swiftgen --verbose --debug
-    - sudo gem update --system
 
 test:
   override:
