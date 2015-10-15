@@ -5,10 +5,12 @@ machine:
 dependencies:
   pre:
     - brew update
-    - brew install swiftgen
+    - brew install swiftgen --verbose --debug
     - sudo gem update --system
 
 test:
   override:
     - xcode-select -p
+    - otool -L /usr/local/bin/swiftgen
+    - otool -l /usr/local/bin/swiftgen | grep -A 2 LC_RPATH
     - swiftgen images Images.xcassets
