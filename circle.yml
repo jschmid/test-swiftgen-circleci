@@ -1,6 +1,9 @@
 machine:
   xcode:
     version: "7.0"
+  environment:
+    XCODE_PROJECT: test.xcodeproj
+    XCODE_SCHEME: test
 
 dependencies:
   pre:
