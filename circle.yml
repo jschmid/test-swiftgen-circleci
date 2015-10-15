@@ -1,0 +1,14 @@
+machine:
+  xcode:
+    version: "7.0"
+
+dependencies:
+  pre:
+    - brew update
+    - brew install swiftgen
+    - sudo gem update --system
+
+test:
+  override:
+    - xcode-select -p
+    - swiftgen images Images.xcassets
