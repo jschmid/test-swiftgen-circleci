@@ -17,4 +17,4 @@ test:
     - otool -L /usr/local/bin/swiftgen
     - otool -l /usr/local/bin/swiftgen | grep -A 2 LC_RPATH
     - swiftgen images Images.xcassets
-    - xctool -scheme test
+    - swiftlint
