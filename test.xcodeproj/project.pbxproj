@@ -74,6 +74,7 @@
 				DD9508B91BD030FE0012BE0C /* Sources */,
 				DD9508BA1BD030FE0012BE0C /* Frameworks */,
 				DD9508BB1BD030FE0012BE0C /* Resources */,
+				DDF7E4191BE0DFCD00A261CB /* Swift lint */,
 			);
 			buildRules = (
 			);
@@ -128,6 +129,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDF7E4191BE0DFCD00A261CB /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /usr/local/bin/swiftlint;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD9508B91BD030FE0012BE0C /* Sources */ = {
@@ -285,6 +303,7 @@
 				DD9508D11BD030FE0012BE0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
