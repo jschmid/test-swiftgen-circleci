@@ -9,7 +9,8 @@ dependencies:
   pre:
     - brew update
     - brew install swiftgen --verbose --debug
-    - brew install swiftlint --verbose --debug
+    - mkdir mybin
+    - brew install swiftlint --verbose --debug --prefix mybin
 
 test:
   override:
@@ -17,4 +18,4 @@ test:
     - otool -L /usr/local/bin/swiftgen
     - otool -l /usr/local/bin/swiftgen | grep -A 2 LC_RPATH
     - swiftgen images Images.xcassets
-    - swiftlint
+    - mybin/swiftlint
